@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GitHubTestingProject</string>
     <string name="github_msg">Hello Github</string>
+    <string name="github_msg1">Hello Github1</string>
 </resources>

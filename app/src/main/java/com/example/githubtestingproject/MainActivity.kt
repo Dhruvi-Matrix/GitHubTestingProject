@@ -11,5 +11,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         textView.text=getString(R.string.github_msg)
+        textView.text=getString(R.string.github_msg1)
     }
 }
