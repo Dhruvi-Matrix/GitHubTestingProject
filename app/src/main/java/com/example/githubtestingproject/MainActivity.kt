@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text=getString(R.string.github_msg2)
+        textView.text=getString(R.string.github_msg)
     }
 }
