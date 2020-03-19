@@ -18,7 +18,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: My first step
-      if: github.event_name == 'push_request'
-      run: echo This event is a push request that had an assignee removed.
+    - name: Upload app APK
+      uses: actions/upload-artifact@v1
+      with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
 
