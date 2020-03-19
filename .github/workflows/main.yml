@@ -9,4 +9,16 @@ on:
     branches: master
   pull_request:
     branches: master
+    
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: My first step
+      if: github.event_name == 'push_request'
+      run: echo This event is a push request that had an assignee removed.
 
